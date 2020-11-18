@@ -1,11 +1,15 @@
 # PyFlooder
-An [HTTP Flood](https://en.m.wikipedia.org/wiki/HTTP_Flood) Python script that could stop a normal website in 10s
+A simple script, written to simulate an http flood attack.
 
-# How does it work ?
-It generates a configurable number of random GET requests and sends them to the target
+``` shell
+python pyflooder.py --help
+usage: pyflooder.py [-h] -a IP -p PORT -c REQUESTS_COUNT
 
-# Usage
+http flood script
 
-```
-pyflooder.py < Hostname > < Port > < Number_of_Attacks >
+optional arguments:
+  -h, --help            show this help message and exit
+  -a IP, --address IP   destination IPv4 address
+  -p PORT, --port PORT  destination port
+  -c REQUESTS_COUNT, --requests-count REQUESTS_COUNT number of requests
 ```
